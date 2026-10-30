@@ -2,10 +2,14 @@ FROM python:3.12-slim
 
 WORKDIR /app
 
-# Install system dependencies for OpenCV and MediaPipe
+# Install system dependencies for OpenCV and MediaPipe (including OpenGL / EGL bindings)
 RUN apt-get update && apt-get install -y --no-install-recommends \
+    libegl1 \
     libgl1 \
+    libgles2 \
     libglib2.0-0 \
+    libsm6 \
+    libxext6 \
     && rm -rf /var/lib/apt/lists/*
 
 COPY requirements.txt .
