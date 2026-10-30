@@ -1,0 +1,32 @@
+# Python Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+.env
+
+# Python Cache & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+
+# SQLite Database (Local state)
+*.db
+posecoach.db
+*.sqlite3
+
+# Large Raw Datasets (Exclude 6.3GB images; keep feature CSV)
+dataset/hvnsh7rwz7-1/
+dataset/**/*.jpg
+dataset/**/*.jpeg
+dataset/**/*.png
+dataset/**/*.zip
+dataset/**/*.tar.gz
+
+# OS & Editor Files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp

@@ -1,0 +1,22 @@
+POSECOACH AI - NORMALIZED MODEL EVALUATION
+==================================================
+
+Validation Accuracy: 76.34%
+Balanced Accuracy: 75.72%
+
+              precision    recall  f1-score   support
+
+    Standing       0.90      0.82      0.86        22
+     Sitting       0.68      0.91      0.78        33
+   Squatting       0.83      0.43      0.57        23
+     Bending       0.76      0.87      0.81        15
+
+    accuracy                           0.76        93
+   macro avg       0.79      0.76      0.76        93
+weighted avg       0.78      0.76      0.75        93
+
+Confusion Matrix:
+[[18  4  0  0]
+ [ 1 30  2  0]
+ [ 0  9 10  4]
+ [ 1  1  0 13]]
